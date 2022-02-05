@@ -2,13 +2,18 @@
 
 YouTube Course programming space invaders, this source is free to use.
 
-# Tags.
+Please use the following link for all videos on the course.
+
+https://www.youtube.com/watch?v=EAe0VwUFj0Y&list=PLbjMajChhgyHtJJ01EYVuSklqSw1mQFHl
+
+
+## Tags.
 
 From EP04c I have tagged the source, please visit the tags and get a zip download for source for the end of that video.
 This will allow source to be downloaded and reviewed for each video on youtube.
 
 
-# Notes from the project videos...
+## Notes from the project videos...
 List of tasks to complete
 -------------------------
 
