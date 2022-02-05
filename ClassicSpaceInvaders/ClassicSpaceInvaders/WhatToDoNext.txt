@@ -1,17 +1,31 @@
 ﻿
-
 List of tasks to complete
 -------------------------
 
- 1. Game Interface.
- 2. Sprite Object.
- 3. Sprite Manager.
- 4. Create Invader sprite.
- 5. Move invader around the screen.
+ 1. [Game Interface.]
+ 2. [Sprite Object.]
+ 3. Sprite Manager.  <--------
+ 4. [Create Invader sprite.]
+ 5. [Move invader around the screen.]
+
+ New Additions -
+
+ 1. Develop GameObject.
+ 2. Develop TManager.
+ 3. Add SpriteManager to main process.
+ 4. Remove old sprite calls.
+ 5. Add another manager to handle strings (scaled and rotated as per the sprites)
+
+ References - 
+ TManager is a template manager that controls the addition, removal and update/draws etc
+ Managers are devired by the Template Manager - that uses GameObject therefore all
+ objects that will use a manager must have a GameObject as a base.
 
 
-
-
+ History
+ -------
+ [First set of notes]
+ 
  What is a sprite?
 
  An object that can be displayed on the screen. 
@@ -25,6 +39,4 @@ List of tasks to complete
  What ever you code it to do! It will need some AI or game logic.
  It must be able to be cleanly removed. Sound and possible player input
  will be needed.
-
-
 

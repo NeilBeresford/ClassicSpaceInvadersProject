@@ -5,6 +5,9 @@ using Microsoft.Xna.Framework.Input;
 using ClassicSpaceInvaders.Modules.Utilities;
 using ClassicSpaceInvaders.Modules.Sprites;
 using ClassicSpaceInvaders.Modules.GameSprites;
+using ClassicSpaceInvaders.Modules.Managers;
+
+
 namespace ClassicSpaceInvaders
 {
     public class ClassicSpaceInvaders : Game
@@ -18,6 +21,8 @@ namespace ClassicSpaceInvaders
         private Texture2D               invaderSpriteSheet;
         private InvaderSprite           invaderSprite;
         private Sprite                  justTheSprite;
+
+        private TManager<GameObject>    SpriteManager = new TManager<GameObject>();
 
         #endregion
 
@@ -75,6 +80,8 @@ namespace ClassicSpaceInvaders
             invaderSprite.Effect        = SpriteEffects.None;
             invaderSprite.Speed         = -1.0f;
 
+            SpriteManager.Add( invaderSprite );
+
             justTheSprite               = new Sprite();
             justTheSprite.Position      = new Vector2( 300, 220 );
             justTheSprite.SourceRect    = new Rectangle( 1, 1, 15, 8 );
@@ -85,6 +92,9 @@ namespace ClassicSpaceInvaders
             justTheSprite.SpriteDepth   = 0.0f;
             justTheSprite.Effect        = SpriteEffects.None;
             justTheSprite.Speed         = -1.0f;
+
+            SpriteManager.Add( justTheSprite );
+
         }
 
         protected override void Update(GameTime gameTime)
@@ -93,8 +103,7 @@ namespace ClassicSpaceInvaders
                 Exit();
 
             // Sprites update
-            invaderSprite.Update( gameTime );
-            justTheSprite.Update( gameTime );
+            SpriteManager.Update( gameTime );
 
             base.Update(gameTime);
         }
@@ -124,8 +133,7 @@ namespace ClassicSpaceInvaders
 
 
             // draw sprites
-            invaderSprite.Draw( gameTime );
-            justTheSprite.Draw( gameTime );
+            SpriteManager.Draw(gameTime);
 
             _spriteBatch.End();
 

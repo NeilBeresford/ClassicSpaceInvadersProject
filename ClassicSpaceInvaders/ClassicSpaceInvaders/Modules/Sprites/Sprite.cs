@@ -3,11 +3,12 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using ClassicSpaceInvaders.Modules.Game;
 using ClassicSpaceInvaders.Modules.Utilities;
+using ClassicSpaceInvaders.Modules.Managers;
 
 
 namespace ClassicSpaceInvaders.Modules.Sprites
 {
-    public class Sprite : GameInterface
+    public class Sprite : GameObject
     {
         #region Private Data
 
@@ -86,18 +87,18 @@ namespace ClassicSpaceInvaders.Modules.Sprites
 
         #region Public Functionality
 
-        public virtual void Initialise()
+        public override void Initialise()
         {
         }
 
-        public virtual void LoadContent()
+        public override void LoadContent()
         {
         }
 
-        public virtual void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime)
         {
         }
-        public virtual void Draw(GameTime gameTime)
+        public override void Draw(GameTime gameTime)
         {
             Global.Instance.CoreGame.SprBatch.Draw( Global.Instance.InvaderSprTexture, Position, SourceRect, SpriteColour, Rotation, Origin, Scale, Effect, SpriteDepth );            
         }
