@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/projects/C#/Games/ClassicSpaceInvaders/ClassicSpaceInvaders/Content/Blank2x2.png","D:/projects/C#/Games/ClassicSpaceInvaders/ClassicSpaceInvaders/Content/bin/Windows/Blank2x2.xnb","TextureProcessor","Texture2DContent",122,101,0.1312072
+"D:/projects/C#/Games/ClassicSpaceInvaders/ClassicSpaceInvaders/Content/OuterSpace.spritefont","D:/projects/C#/Games/ClassicSpaceInvaders/ClassicSpaceInvaders/Content/bin/Windows/OuterSpace.xnb","FontDescriptionProcessor","SpriteFontContent",2014,136226,0.1796395
+"D:/projects/C#/Games/ClassicSpaceInvaders/ClassicSpaceInvaders/Content/SpaceInvadersTransparent.png","D:/projects/C#/Games/ClassicSpaceInvaders/ClassicSpaceInvaders/Content/bin/Windows/SpaceInvadersTransparent.xnb","TextureProcessor","Texture2DContent",1704,56917,0.1042101
