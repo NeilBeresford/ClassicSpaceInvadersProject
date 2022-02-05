@@ -2,6 +2,13 @@
 
 YouTube Course programming space invaders, this source is free to use.
 
+The aim of this source is to allow you to learn to write your first game, at a professional level.
+The aims are to show a structured logical moduled approach to development. My goal is to set the
+pace to allow any one to learn basic programming skills and then enjoy and understand, but more
+importantly write their own game.
+
+This course was initially planned for a father and his young daughter, both have enjoyed the course.
+
 Please use the following link for all videos on the course.
 
 https://www.youtube.com/watch?v=EAe0VwUFj0Y&list=PLbjMajChhgyHtJJ01EYVuSklqSw1mQFHl
