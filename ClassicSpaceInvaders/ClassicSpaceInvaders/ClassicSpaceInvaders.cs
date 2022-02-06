@@ -71,7 +71,7 @@ namespace ClassicSpaceInvaders
 
             invaderSprite               = new InvaderSprite();
             invaderSprite.Position      = new Vector2( 300, 250 );
-            invaderSprite.SourceRect    = new Rectangle( 1, 1, 15, 8 );
+            invaderSprite.SourceRect    = new Rectangle( 1, 11, 15, 8 );
             invaderSprite.Origin        = Vector2.Zero;
             invaderSprite.Scale         = 3.0f;
             invaderSprite.Rotation      = 0.0f;
@@ -79,6 +79,12 @@ namespace ClassicSpaceInvaders
             invaderSprite.SpriteDepth   = 0.0f;
             invaderSprite.Effect        = SpriteEffects.None;
             invaderSprite.Speed         = -1.0f;
+
+            Rectangle[] InvaderFrames = { new Rectangle(1, 1, 15, 8 ), new Rectangle(1, 11, 15, 8) }; 
+
+            // Anim invader...
+            invaderSprite.SetAnim( InvaderFrames, 0.250f, true );
+            invaderSprite.AnimActive = true;
 
             SpriteManager.Add( invaderSprite );
 

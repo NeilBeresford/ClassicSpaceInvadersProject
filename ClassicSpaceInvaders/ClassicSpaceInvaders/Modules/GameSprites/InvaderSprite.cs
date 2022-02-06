@@ -7,7 +7,7 @@ using ClassicSpaceInvaders.Modules.Sprites;
 
 namespace ClassicSpaceInvaders.Modules.GameSprites
 {
-    public class InvaderSprite : Sprite
+    public class InvaderSprite : AnimSprite
     {
         #region Public Functionality
 
@@ -24,11 +24,13 @@ namespace ClassicSpaceInvaders.Modules.GameSprites
     
             Position = pos;
 
+            base.Update( gameTime );
+
         }
 
         public override void Draw( GameTime gameTime )
         {
-            Global.Instance.CoreGame.SprBatch.Draw( Global.Instance.InvaderSprTexture, Position, SourceRect, SpriteColour, Rotation, Origin, Scale, SpriteEffects.FlipVertically, SpriteDepth );            
+            base.Draw( gameTime );   
         }
 
 

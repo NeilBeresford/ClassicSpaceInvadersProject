@@ -2,9 +2,38 @@
 List of tasks to complete
 -------------------------
 
+ 1. Remove the primatives from draw.
+ 2. Add a better approach at creating sprites.
+ 3. Extend the managers, for player and invaders.
+ 4. Start work on Invader behaviour.
+ 5. Add a Game Manager.
+ 6. Anim Sprites.
+ 7. Sprite Text for Game.
+ 8. Mother ship mamanger.
+ 9. Player manager, state system.
+10. Player fires bullet and bullet control.
+11. Score system and display.
+12. Shoot invaders amd remove them.
+13. Invader fires bullet.
+14. Player invader collision and explosion.
+15. End game, all invaders killed or invaders hit bottom, or player lives gone.
+16. Introduction to bases.
+17. Base distruction, from all bullets.
+18. Game menu.
+19. Optional Two Player mode.
+20. High Score display.
+
+
+
+
+ History
+ -------
+
+ [Notes for EP05]
+
  1. [Game Interface.]
  2. [Sprite Object.]
- 3. Sprite Manager.  <--------
+ 3. [Sprite Manager.]
  4. [Create Invader sprite.]
  5. [Move invader around the screen.]
 
@@ -22,8 +51,6 @@ List of tasks to complete
  objects that will use a manager must have a GameObject as a base.
 
 
- History
- -------
  [First set of notes]
  
  What is a sprite?
