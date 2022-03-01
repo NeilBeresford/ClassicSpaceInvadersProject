@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -69,37 +70,7 @@ namespace ClassicSpaceInvaders
 
             Global.Instance.InvaderSprTexture   = invaderSpriteSheet;
 
-            invaderSprite               = new InvaderSprite();
-            invaderSprite.Position      = new Vector2( 300, 250 );
-            invaderSprite.SourceRect    = new Rectangle( 1, 11, 15, 8 );
-            invaderSprite.Origin        = Vector2.Zero;
-            invaderSprite.Scale         = 3.0f;
-            invaderSprite.Rotation      = 0.0f;
-            invaderSprite.SpriteColour  = Color.LightBlue;
-            invaderSprite.SpriteDepth   = 0.0f;
-            invaderSprite.Effect        = SpriteEffects.None;
-            invaderSprite.Speed         = -1.0f;
-
-            Rectangle[] InvaderFrames = { new Rectangle(1, 1, 15, 8 ), new Rectangle(1, 11, 15, 8) }; 
-
-            // Anim invader...
-            invaderSprite.SetAnim( InvaderFrames, 0.250f, true );
-            invaderSprite.AnimActive = true;
-
-            SpriteManager.Add( invaderSprite );
-
-            justTheSprite               = new Sprite();
-            justTheSprite.Position      = new Vector2( 300, 220 );
-            justTheSprite.SourceRect    = new Rectangle( 1, 1, 15, 8 );
-            justTheSprite.Origin        = Vector2.Zero;
-            justTheSprite.Scale         = 3.0f;
-            justTheSprite.Rotation      = 0.0f;
-            justTheSprite.SpriteColour  = Color.LightPink;
-            justTheSprite.SpriteDepth   = 0.0f;
-            justTheSprite.Effect        = SpriteEffects.None;
-            justTheSprite.Speed         = -1.0f;
-
-            SpriteManager.Add( justTheSprite );
+            SetupSpriteInvaders( 20.0f, 80.0f, 16, 8, 36, 28 );
 
         }
 
@@ -125,19 +96,6 @@ namespace ClassicSpaceInvaders
 
             _spriteBatch.DrawString( outerSpaceFont, "CLASSIC SPACE INVADERS", new Vector2( 10, 10 ), Color.White );
 
-            _spriteBatch.Draw( blankTexture, new Rectangle( 100, 100, 100, 200 ), Color.Crimson );
-            _spriteBatch.Draw( blankTexture, new Rectangle( 150, 150, 300, 300 ), Color.RosyBrown );
-            _spriteBatch.Draw( blankTexture, new Rectangle( 400, 370, 100, 100 ), Color.Yellow );
-
-
-            _spriteBatch.Draw( invaderSpriteSheet, new Vector2( 400, 50 ), new Rectangle( 1, 1, 15, 8 ), Color.Aquamarine, 0.0f, Vector2.Zero, 4.0f, SpriteEffects.None, 0.0f );
-
-            _spriteBatch.Draw( invaderSpriteSheet, new Vector2( 300, 300 ), new Rectangle( 1, 1, 15, 8 ), Color.LightCyan, 0.0f, Vector2.Zero, new Vector2( 3,3 ), SpriteEffects.None, 0.0f );
-            _spriteBatch.Draw( invaderSpriteSheet, new Vector2( 300, 330 ), new Rectangle( 1, 11, 15, 8 ), Color.LightCyan, 0.0f, Vector2.Zero, new Vector2( 3,3 ), SpriteEffects.None, 0.0f );
-            _spriteBatch.Draw( invaderSpriteSheet, new Vector2( 260, 300 ), new Rectangle( 19, 1, 15, 8 ), Color.LightCyan, 0.0f, Vector2.Zero, new Vector2( 3,3 ), SpriteEffects.None, 0.0f );
-            _spriteBatch.Draw( invaderSpriteSheet, new Vector2( 260, 330 ), new Rectangle( 19, 11, 15, 8 ), Color.LightCyan, 0.0f, Vector2.Zero, new Vector2( 3,3 ), SpriteEffects.None, 0.0f );
-
-
             // draw sprites
             SpriteManager.Draw(gameTime);
 
@@ -147,6 +105,56 @@ namespace ClassicSpaceInvaders
         }
 
         #endregion
+
+        #region Private Functionality
+        /// <summary>
+        /// Setup the invader sprites for starting the game
+        /// </summary>
+        private void SetupSpriteInvaders( float fXStart, float fYStart, Int32 Width, Int32 Height, Int32 xInc, Int32 yInc )
+        {
+
+            // have a starting position, also we will need a reference start frame
+            // this means we will need to create all our sprites as invader sprites, add animations
+
+            Rectangle[] InvaderFrames   = { new Rectangle(1, 1, 15, 8), new Rectangle(1, 11, 15, 8) };
+            Vector2 invPos              = new Vector2( fXStart, fYStart);
+            Int32   sprStartFrame       = 0;
+
+
+            // Create 'Height' rows of 'Width' invaders...
+            for (Int32 nYpos = 0; nYpos < Height; nYpos++, invPos.Y = fYStart + (nYpos * yInc))
+            {
+                invPos.X = fXStart;
+                for (Int32 nXpos = 0; nXpos < Width; nXpos++, invPos.X = fXStart + (nXpos * xInc))
+                {
+                    // Create the invader sprite...
+                    InvaderSprite spr = new InvaderSprite(new Sprite( invPos,  InvaderFrames[ sprStartFrame ], Color.LightBlue, 3.0f, SpriteEffects.None, 0.0f));
+
+                    // Anim invader...
+                    spr.SetAnim( InvaderFrames, 0.250f, true);
+                    spr.AnimActive = true;
+
+                    // Add invader sprite to the manager...
+                    SpriteManager.Add( spr );
+                }
+
+                // change the sprite image for the next row of invaders...
+                sprStartFrame++;
+                if ( sprStartFrame >= InvaderFrames.Length )
+                {
+                    sprStartFrame = 0;
+                }
+
+            }
+
+
+
+
+        }
+
+        #endregion
+
+
 
     }
 }

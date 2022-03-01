@@ -26,6 +26,31 @@ namespace ClassicSpaceInvaders.Modules.Sprites
         #endregion
 
         #region Constructors etc
+
+        public Sprite()
+        {
+            Reset();
+        }
+
+        public Sprite(Vector2 inPosition, Rectangle inSourceRect)
+        {
+            Reset();
+            position = inPosition;
+            sourceRect = inSourceRect;
+        }
+
+        public Sprite(Vector2 inPosition, Rectangle inSourceRect, Color inColour, float inScale, SpriteEffects inEffects, float inSpeed )
+        {
+            Reset();
+            position        = inPosition;
+            sourceRect      = inSourceRect;
+            spriteColour    = inColour;
+            fScale          = inScale;
+            effect          = inEffects;
+            fSpeed          = inSpeed;
+        }
+
+
         #endregion
 
         #region Properties
@@ -106,6 +131,20 @@ namespace ClassicSpaceInvaders.Modules.Sprites
         #endregion
 
         #region Private Functionality
+
+        private void Reset()
+        {
+            position = new Vector2(0.0f);
+            sourceRect = new Rectangle(0, 0, 8, 8);
+            spriteColour = Color.White;
+
+            fSpeed = 0.0f;
+            origin = new Vector2(0.0f);
+            fRotation = 0.0f;
+            fScale = 1.0f;
+            sprDepth = 0.0f;
+            effect = SpriteEffects.None;
+        }
 
         #endregion
 

@@ -25,6 +25,15 @@ namespace ClassicSpaceInvaders.Modules.Sprites
 
         #endregion
 
+        #region Constructors
+
+        public AnimSprite( Sprite inSprite ) : base( inSprite.Position, inSprite.SourceRect, inSprite.SpriteColour, inSprite.Scale, inSprite.Effect, inSprite.Speed )
+        {
+        }
+
+        #endregion
+
+
         #region Properties
 
         public List<Rectangle> FrameList
