@@ -2,6 +2,8 @@
 List of tasks to complete
 -------------------------
 
+Notes - Player sprite is at 3,48 and is 12x8
+
  1. Remove the primatives from draw.
  2. Add a better approach at creating sprites.
  3. Extend the managers, for player and invaders.

@@ -68,7 +68,6 @@ D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\
 D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
 D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
 D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
-D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\obj\Debug\netcoreapp3.1\ClassicSpaceInvaders.csprojAssemblyReference.cache
 D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\obj\Debug\netcoreapp3.1\ClassicSpaceInvaders.AssemblyInfoInputs.cache
 D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\obj\Debug\netcoreapp3.1\ClassicSpaceInvaders.AssemblyInfo.cs
 D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\obj\Debug\netcoreapp3.1\ClassicSpaceInvaders.csproj.CoreCompileInputs.cache
@@ -76,3 +75,5 @@ D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\
 D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\obj\Debug\netcoreapp3.1\ClassicSpaceInvaders.dll
 D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\obj\Debug\netcoreapp3.1\ClassicSpaceInvaders.pdb
 D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\obj\Debug\netcoreapp3.1\ClassicSpaceInvaders.genruntimeconfig.cache
+D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\obj\Debug\netcoreapp3.1\ClassicSpaceInvaders.csproj.AssemblyReference.cache
+D:\projects\C#\Games\ForGITHUB\ClassicSpaceInvadersProject\ClassicSpaceInvaders\ClassicSpaceInvaders\obj\Debug\netcoreapp3.1\ClassicSpaceInvaders.GeneratedMSBuildEditorConfig.editorconfig

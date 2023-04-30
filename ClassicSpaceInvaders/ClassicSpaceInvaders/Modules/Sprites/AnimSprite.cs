@@ -69,13 +69,14 @@ namespace ClassicSpaceInvaders.Modules.Sprites
 
         #region public Functionality
 
-        public void SetAnim( Rectangle[] Frames, float FrameDelay, bool Loop )
+        public void SetAnim( Rectangle[] Frames, Int32 nStartFrames, Int32 nFrames, float FrameDelay, bool Loop )
         {
             // Add frames to list...
             mAnimFrames.Clear();
-            foreach( Rectangle rFrame in Frames )
+
+            for( Int32 nIndex = nStartFrames; nIndex < (nStartFrames + nFrames); nIndex++ )
             {
-                mAnimFrames.Add( rFrame );
+                mAnimFrames.Add( Frames[ nIndex ] );
             }
             mCurFrame       = 0;
             mTotalFrames    = mAnimFrames.Count;        // or use Frames.Length

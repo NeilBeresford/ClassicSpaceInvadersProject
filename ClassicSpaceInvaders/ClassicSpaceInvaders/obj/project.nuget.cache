@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g/VGG3xUs+X5Uv94DukES60FYv2l8P5pEv9MkpM9yq0V8L4bkWdpht95xV9IV9fNpdWSZ2BAIwGJFU22J/l+fg==",
+  "dgSpecHash": "xCKAFrDSHTJW9efJ8ItJU5lzDqYAPfGJuMyt8p2343EQkReaCSI1Lx94iFgmZd3uaZzi/SuUy3LXuN4cpG0Swg==",
   "success": true,
   "projectFilePath": "D:\\projects\\C#\\Games\\ForGITHUB\\ClassicSpaceInvadersProject\\ClassicSpaceInvaders\\ClassicSpaceInvaders\\ClassicSpaceInvaders.csproj",
   "expectedPackageFiles": [
@@ -124,7 +124,8 @@
     "C:\\Users\\neilb\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
     "C:\\Users\\neilb\\.nuget\\packages\\system.xml.xmldocument\\4.0.1\\system.xml.xmldocument.4.0.1.nupkg.sha512",
     "C:\\Users\\neilb\\.nuget\\packages\\system.xml.xpath\\4.0.1\\system.xml.xpath.4.0.1.nupkg.sha512",
-    "C:\\Users\\neilb\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
+    "C:\\Users\\neilb\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
+    "C:\\Users\\neilb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512"
   ],
   "logs": []
 }

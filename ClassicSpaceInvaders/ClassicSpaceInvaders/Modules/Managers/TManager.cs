@@ -92,6 +92,18 @@ namespace ClassicSpaceInvaders.Modules.Managers
         #region Properites
         public int ID { get; set; }
 
+        public Int32 ObjectCount
+        {
+            get{  return( mObjectList.Count ); }
+        }
+
+
+        public T this[Int32 ID]
+        {
+            get { return mObjectList[ID]; }
+            set { mObjectList[ID] = value; }
+        }
+        
         #endregion
 
         #region Constructors
@@ -129,6 +141,7 @@ namespace ClassicSpaceInvaders.Modules.Managers
 
             return( obj.BaseID );
         }
+
         /// <summary>
         /// Call this to allow the object to be removed.
         /// </summary>
@@ -183,7 +196,6 @@ namespace ClassicSpaceInvaders.Modules.Managers
             }
 
         }
-
 
         #endregion
 
